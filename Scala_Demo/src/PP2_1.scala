@@ -2,10 +2,10 @@
 
 class PP2_1 
 {
-    var arr1 = new Array[Int](10)
-    var arr2 = new Array[Int](10)
-    arr1 = Array (4,1,0,2,9,6,8,7,5,3)
-    arr2 = Array (4,6,7,2,1,0,8,3,9)
+    var arr1 = scala.util.Random.shuffle(1 to 7)
+    var arr2 = scala.util.Random.shuffle(1 to 6)
+    //arr1 = Array (4,1,0,2,9,6,8,7,5,3)
+    //arr2 = Array (4,6,7,2,1,0,8,3,9)
     def missing_ele
     {
       var sum1:Int = 0

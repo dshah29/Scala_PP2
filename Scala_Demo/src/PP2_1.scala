@@ -1,9 +1,12 @@
-
+import Array._
 
 class PP2_1 
 {
     var arr1 = scala.util.Random.shuffle(1 to 7)
-    var arr2 = scala.util.Random.shuffle(1 to 6)
+    //var arr2 = scala.util.Random.shuffle(arr1)
+    var arr2 = arr1.toBuffer
+    arr2.remove(scala.util.Random.nextInt(6))
+    arr2.toArray
     //arr1 = Array (4,1,0,2,9,6,8,7,5,3)
     //arr2 = Array (4,6,7,2,1,0,8,3,9)
     def missing_ele
@@ -20,6 +23,8 @@ class PP2_1
         sum2 = sum2 + b
       }
       miss_ele = sum1 - sum2
+      println("Array - 1"+arr1)
+      println("Array - 2"+arr2)
       println("Missing element from Array2 is " +miss_ele)
     }
 }
